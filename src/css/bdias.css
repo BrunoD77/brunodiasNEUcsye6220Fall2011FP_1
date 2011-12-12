@@ -1,0 +1,216 @@
+:focus, :active { outline: 0 }
+
+ol, ul { list-style: none }
+
+blockquote:before, blockquote:after { content: "" }
+blockquote { quotes: "" "" }
+
+header, nav, article, aside, footer, hgroup, section { display: block }
+
+/* Clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1 } /* IE6 */
+*:first-child+html .clearfix { zoom: 1 } /* IE7 */
+
+.bdias-header {
+	font: bold 2em Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-shadow: 5px 5px 10px #000;
+	
+	color: #CCCCCC;
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	width:100%; 
+	height:40px; 
+	z-index:1; 
+	background: #660000; 
+	background-color: #660000; 
+	border: 1px none #000000;
+	padding:20px;
+	visibility:visible;
+}
+.bdias-welcome{
+	position:absolute;
+	top:100px;
+	left:25%;
+	width:50%;
+	z-index:2;
+}
+.bdias-views{
+	position:absolute;
+	top:100px;
+	left:5%;
+	width:90%;
+	background-color: #FFFFFF;
+	border:1px solid #660000;
+	z-index:2;
+}
+.bdias-view-header{
+	padding:1px;
+	height: 30px;
+	background-color:#660000;
+	color:#CCC;
+	border-top:solid 1px;
+	font: bold large Arial, Helvetica, sans-serif;
+}
+.bdias-view-body{
+	padding:40px;
+}
+.bdias-views-fileView1{
+	margin:10px;
+	width:40%;
+	float:left;
+	text-align:left;
+	border-right: solid 1px #600;
+}
+.bdias-views-fileView2{
+	margin:10px;
+	width:40%;
+	float:left;
+	text-align:left;
+}
+.bdias-views-inheritance{
+	position:fixed;
+	top:32%;
+	left:500px;
+	width:900px;
+	height:500px;
+	visibility:hidden;
+}
+#bdias-views-inheritance-parent{
+	position:absolute;
+	top:20px;
+	left:40%;
+	width:200px;
+	height:100px;
+	border:1px solid #333;
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align:center;
+	z-index: 4;
+}
+#bdias-views-inheritance-vertLine{
+	position:absolute;
+	top:120px;
+	left:46%;
+	z-index: 1;
+}
+#bdias-views-inheritance-tiltedRightLine{
+	position:absolute;
+	top:240px;
+	left:30%;
+	z-index: 1;
+}
+#bdias-views-inheritance-tiltedLeftLine{
+	position:absolute;
+	top:230px;
+	left:60%;
+	z-index: 1;
+}
+#bdias-views-inheritance-class{
+	position:absolute;
+	top:180px;
+	left:40%;
+	width:200px;
+	height:100px;
+	border:1px solid #009;
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#fff;
+	text-align:center;
+	z-index: 5;
+}
+#bdias-views-inheritance-child1{
+	position:absolute;
+	top:300px;
+	left:10%;
+	width:200px;
+	height:100px;
+	border:1px solid #900;
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#fff;
+	text-align:center;
+	z-index: 6;
+}
+#bdias-views-inheritance-child2{
+	position:absolute;
+	top:300px;
+	left:70%;
+	width:200px;
+	height:100px;
+	border:1px solid #900;
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#fff;
+	text-align:center;
+	z-index: 7;
+}
+
+.bdias-views-fileView-fileList{
+	float:left;
+	padding:10px;
+	margin:10px;
+	text-align:left;
+}
+
+.bdias-buttons{
+	position:absolute;
+	top:60px;
+	left:0%;
+	width:100%;
+	height:0px;
+	text-align:center;
+	padding:20px;
+	background-color: #660000;
+	border:1px solid #660000;
+	z-index:2;
+	visibility:visible;
+}
+.bdias-button-inactive{
+	font: bold medium Arial, Helvetica, sans-serif;
+	padding:20px;
+	margin:5px;
+	background-color:#664444;
+	color:#CCCCCC;
+	border:1px solid #000000;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	
+}
+.bdias-button-active{
+	font: bold medium Arial, Helvetica, sans-serif;
+	padding:20px;
+	margin:5px;
+	background-color:#660000;
+	color:#CCCCCC;
+	border:1px solid #000000;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	
+}
+.bdias-label{
+	font: bold medium Arial, Helvetica, sans-serif;
+}
+.bdias-result{
+	font: medium Arial, Helvetica, sans-serif;
+}
+.bdias-description{
+	font: large Arial, Helvetica, sans-serif;
+}
