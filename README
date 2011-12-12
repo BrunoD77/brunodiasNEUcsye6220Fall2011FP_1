@@ -1,0 +1,58 @@
+csye6220:
+Fall 2011
+Prof: Maurant
+Student: Bruno Dias
+SID: 
+
+
+I had a lot of 'personal' problems while working on this project:
+2 business trips (1 week in duration each) since the Final Project started. 
+And believe it or not, the boot sector of my computer became corrupted during a power outage in my area.
+This is not an excuse for what the project looks like, simply an explanation of why it is not much, 
+MUCH better than what it is.
+
+I believe I have met most of the requirements for this final project.
+
+I believe my application meets the Goal stated in the "CSYE 6220 - Changes and Additions - Final Project" document.
+
+Transfer of Source Code - I have exceeded this expectation as my web-application automatically scans the 
+"server" for the location of the JavaScript project to be used. For future updates, I'd like to provide a mechanism to 
+upload a .zip file and unzip it, then proceed as I have in this application.
+
+Although you can viwe any class and then view the source code for that class in my application, the presentation is crude
+at best, and there is no highlighting of functions or variables as it was requested. I would implement this in a future
+update.
+
+I believe my web-application meets the role specified.
+
+Supported Views:
+	Inheritance View
+	Composition View
+	Gloval Variables View
+	Function Calls View
+	Resources View
+	Files View
+
+This web-application DOES support parsing tho I did not imiplement ALL of the ways javaScript can provide OO through inheritance. 
+I only focused on the code of the 'MainMenu' game.
+
+I have used a combination of html5, css3, javaScript, and jQuery for my user interface, as well as php for the business and some UI
+elements.
+
+TESTING:
+I have tested my project on a PC using Google Chrome. I HAVE NOT TESTED THIS PROJECT IN AN APPLE COMPUTER, BUT I DON'T THINK I INTRODUCED
+ANY CODE THAT SHOULD BREAK IN A DIFFERENT PLATFORM. IDEALLY I WOULD HAVE LIKED TO TEST THIS ON THE ENGINEERING COE SERVER, BUT THE SERVER,
+AS YOU MAY BE AWARE, DOES NOT SUPPORT PHP.
+
+
+INSTRUCTIONS FOR RUNNING THIS APP.
+	You must have 
+		REQUIRED: XAMPP installed and running to provide services for this project.
+			  You should have Google Chrome installed.
+
+1) Open the folder where you keep the root directory for your javaScript code.
+2) Copy the root directory of your java Script project. (For the final project, this would be “MainMenu”).
+3) Open the folder where this php file resides. If you are not sure, check the following path:
+      C:\xampp\htdocs\fp
+4) Paste the entire folder into this directory. (for the final project this would be “MainMenu”)
+5) Click on the Scan Button.

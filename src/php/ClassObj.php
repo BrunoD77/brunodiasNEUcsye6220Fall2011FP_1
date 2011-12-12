@@ -8,6 +8,8 @@ class ClassObj{
 	private $children = array();
 	private $composedOf = array();
 	private $usedIn = array();
+	private $code;
+	private $formattedFile;
 	
 	
 	private $numberOfOpenComm = 0;
@@ -20,9 +22,11 @@ class ClassObj{
 		$this->functions = $fncs;
 		$this->parent = $daddy;
 	}
-	
+	public function getCode(){
+		return $this->code;
+	}
 	public function getClassName(){
-		return $this->className;
+		return trim($this->className);
 	}
 	public function getDefinedInFile(){
 		return $this->definedInFile;
@@ -42,13 +46,15 @@ class ClassObj{
 	public function getUsedIn(){
 		return $this->usedIn;
 	}
+	public function getFormatedFile(){
+		return $this->formattedFile;
+	}
 	
 	public function scanForUsage(){
 		global $fv;
-		$files = $fv->getJavaScriptFilesArray();
-
+		$files = $fv->getJavaScriptFilesArray();		
 		for( $i = 0; $i < count($files); $i++ ){
-			$file = $files[$i];			
+			$file = $files[$i];								
 			$fh = fopen($fv->getProjectName() . "/" . $file, 'r');
 			while(!feof($fh)){
 				$line = fgets($fh);
@@ -93,8 +99,28 @@ class ClassObj{
 				}
 			}
 			fclose($fh);
+			
+			if( !file_exists("FormattedFiles")){
+				mkdir("FormattedFiles");
+			}
+			
 		}
 		$this->functions = array_unique($this->functions);
+		
+		$this->code = "<div class='bdias-code'>";	
+		$this->code .= "<STRONG>" . $this->className . "</STRONG><BR>";
+		$htmFormatFile = "FormattedFiles/html_" . $this->className . ".html";
+		$file = $this->definedInFile;
+		$fh = fopen($file, 'r');
+		while(!feof($fh)){
+			$line = fgets($fh);
+			$this->code .= $line . "<BR>";
+		}
+		$this->code .= "</div>";
+		$this->formattedFile= $htmFormatFile;
+		$fh = fopen($htmFormatFile, 'w') or die("can't open the file");			
+		fwrite($fh, $this->code);
+		fclose($fh);
 	}
 
 	private function inComment($line){
