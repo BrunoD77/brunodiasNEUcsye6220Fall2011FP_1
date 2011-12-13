@@ -161,7 +161,7 @@ if( $projDir == "NONE" ){
     			&#8220;MainMenu&#8221;)<br>
     			<em><strong><font color='#660000' size='+1'>
     			5) </font></strong></em>Click on the Scan Button.</p>
-    			<form name='scan' action='src/php/scanDir.php'><input type='submit' name='scan' value='Scan'/></form>
+    			<form name='scan' action='src/php/scanDir.php'><input type='submit' name='scan' value='Scan'/></form>    			
 			</div>";
 }else{
 ?>

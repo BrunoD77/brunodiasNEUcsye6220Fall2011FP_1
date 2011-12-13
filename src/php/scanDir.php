@@ -15,7 +15,9 @@ function scanProjDir($dir){
 					( $file != "index.php" ) 	&& 
 					( $file != "src" ) 			&&
 					( $file != "." ) 			&& 
-					( $file != ".." ) ){
+					( $file != ".." ) 			&& 
+					( $file != "README" )		&& 
+					( $file != "README.txt" )	){
 						echo "THE PROJECT DIRECTORY IS : " . $file . "<BR>";
 						$projectName = $file;
 				}				
